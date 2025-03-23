@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap');
+
+
+:root {
+  --baggrund: #FBF6F0;
+  --overskrift: #02594E;
+  --sekunder: #4F7E6E;
+}
+
+/* HTML & Body */
+body {
+  background-color: var(--baggrund);
+  margin: 0;
+  padding: 0;
+  font-family: Inter;
+  box-sizing: border-box; /* sikrer at elementerne er indenfor viewport */
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* Ensures equal spacing */
+  padding: 50px 6%; /* Adjust as needed */
+  background-color: var(--baggrund);
+}
+
+.logo img {
+  width: 100px;  /* Adjust size as needed */
+  height: auto;
+}
+
+nav {
+  flex: 1; /* Allows navigation to take up remaining space */
+  display: flex;
+  justify-content: center; /* Centers the ul */
+}
+
+nav ul {
+  display: flex;
+  width: 100%; /* Ensures full width */
+  justify-content: space-evenly; /* Spreads items evenly */
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+nav ul li {
+  font-size: 22px;
+  font-weight: normal;
+  color: var(--overskrift); /* Adjust color */
+  cursor: pointer;
+  transition: color 0.3s ease-in-out;
+}
+
+
+.kolonner {
+  display: flex;
+  height: 300px; /* Should be removed. Only for demonstration */
+}
+
+.kolonnerbox {
+  flex: 30%;
+}
+
+
+.overskrift{
+ display: flex;
+ flex-direction: column;
+ padding-left: 10%;
+ padding-bottom: 200px;
+}
+
+h1 {
+  font-size: 80px;
+  font-family: 'Inter', sans-serif;
+  font-weight: 500; /* Adjust weight (300, 400, 600, 700) */
+  color: var(--overskrift); /* Adjust if needed */
+  margin: 0;
+  padding-top: 8%;
+}
+
+h2{
+  font-size: 35px;
+  font-family: 'Inter', sans-serif;
+  font-weight: lighter; /* Adjust weight (300, 400, 600, 700) */
+  color: var(--sekunder); /* Adjust if needed */
+  margin: 0;
+  padding-top: 15px;
+}
+
+h3{
+  font-size: 40px;
+  text-align: center;
+  font-family: 'Inter', sans-serif;
+  font-weight: 500; /* Adjust weight (300, 400, 600, 700) */
+  color: var(--overskrift); /* Adjust if needed */
+  margin: 0;
+  padding-top: 5px;
+}
+
+.kategorier{
+  padding: 0 100px 0 100px;
+}
