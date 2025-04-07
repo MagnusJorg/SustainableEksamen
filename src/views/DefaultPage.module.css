@@ -2,16 +2,25 @@
 
 
 /* Style for h1 inde i hver card */
-.eksempler .card h1 {
+.forklaring h2 {
     font-size: 30px; 
     font-weight: bold;
-    margin: 0;  
 }
 
 
+.ikoner img {
+    width: 80px;
+    height: auto;
+    margin-bottom: 10px;
+  }
+
 /* Styler eksemplerne*/
 .eksempler {
-    display: flex;
+    /* display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    margin-top: 10px; */
+    display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 2rem;
 }
