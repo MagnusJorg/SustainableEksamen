@@ -12,12 +12,11 @@ function Hvt() {
                 </p>
             </section>
 
-            {/* Anden sektion med 3 kolonner */}
             <section className={styles.hvtSek2}>
                 <div className={styles.kolonne}>
                     <h2>ESG-tal</h2>
                     <p>
-                        Du får data, der viser, hvor meget din hjemmeside sparer i CO₂ sat i kontekst og klar til at sende videre. 
+                        Du får data, der viser, hvor meget din hjemmeside sparer i CO₂, sat i kontekst og klar til at sende videre.
                         Perfekt til rapporter, møder med kunder eller når du skal vise ledelsen, at du faktisk gør noget.
                     </p>
                 </div>
@@ -25,15 +24,15 @@ function Hvt() {
                 <div className={styles.kolonne}>
                     <h2>Ressourceoptimering</h2>
                     <p>
-                        Din hjemmeside kommer til at se præcis ud som før. Vi komprimerer og ressourceoptimerer det du allerede har, 
+                        Din hjemmeside kommer til at se præcis ud som før. Vi komprimerer og ressourceoptimerer det du allerede har,
                         så den bliver grønnere – og hurtigere.
                     </p>
                 </div>
 
                 <div className={styles.kolonne}>
-                    <h2>Hurtig leveringen</h2>
+                    <h2>Hurtig levering</h2>
                     <p>
-                        Vi leverer ESG-dataene på under 3 dage. Du behøver ikke ændre noget – vi klarer det hele bag kulissen. 
+                        Vi leverer ESG-dataene på under 3 dage. Du behøver ikke ændre noget – vi klarer det hele bag kulissen.
                         Hurtigt. Sikkert. Uden bøvl.
                     </p>
                 </div>
