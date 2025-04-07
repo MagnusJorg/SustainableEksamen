@@ -7,7 +7,7 @@ export default function Footer() {
             <section className={mystyle.footerKolonne}>
                 <p><em>Ingen grøn snak <br /> - kun grønne resultater</em></p>
             </section>
-
+ 
             <section className={mystyle.kontakt}>
                 <Link to="/">FORSIDE</Link>
                 <Link to="/Hvt">HVAD VI TILBYDER</Link>
