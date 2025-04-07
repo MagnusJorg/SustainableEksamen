@@ -1,3 +1,4 @@
+import mystyle from "./Accordion.module.css";
 export default function Footer() {
 
     return (
