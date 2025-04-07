@@ -9,7 +9,6 @@
 .kolonne {
     flex: 1;
     padding: 20px;
-    min-height: 500px; /* så de får lidt højde også */
 }
 
 .hvtSek2 {
