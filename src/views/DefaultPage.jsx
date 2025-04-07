@@ -27,8 +27,8 @@ export default function DefaultPage() {
 <p>Dette svarer til</p>
                 <div className={mystyle.eksempler}>
                     {itemlist.map((item, index) => (
-                        <div key={index} className={mystyle.card}>
-                            <img src={item.image} alt={item.name} className={mystyle.cardImage} /> {/* Placerer billede over h2 */}
+                        <div key={index} className={mystyle.forklaring}>
+                            <img src={item.image} alt={item.name} className={mystyle.ikoner} /> {/* Placerer billede over h2 */}
                             <h2>{item.name}</h2>
                             <p>{item.desc}</p>
                         </div>
