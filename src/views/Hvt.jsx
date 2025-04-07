@@ -1,7 +1,7 @@
 import { useState } from "react";
 import AccordionItem from "../components/AccordionItem";
 
-function Skoler() {
+function Hvt() {
     const itemlist = [
         { id: "1", name: "kirkebakken", desc: "Kirkebakken er en folkeskole" },
         { id: "2", name: "eaaa", desc: "Eaaa er et erhvers akademi" },
@@ -39,6 +39,6 @@ function Skoler() {
     )
 }
 
-export default Skoler;
+export default Hvt;
 
 

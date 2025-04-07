@@ -7,7 +7,7 @@ const itemlist = [
     { id: "3", name: "item 3", desc: "item 3 description. A kpidf kfd jfkji uows lsr." },
 ];
 
-function ThirdPage() {
+function Oo() {
     const [open, setOpen] = useState(false);
     const [selectedItem, setSelectedItem] = useState(null);
 
@@ -43,4 +43,4 @@ function ThirdPage() {
     );
 };
 
-export default ThirdPage;
+export default Oo;

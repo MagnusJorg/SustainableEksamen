@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import mystyle from "./SecondPage.module.css";
 
-function SecondPage() {
+function Svd() {
     const itemlist = [
         { id: "1", name: "item 1", desc: "item 1 description. A fja laædsj æaljf puæaasr." },
         { id: "2", name: "item 2", desc: "item 2 description. A fgsugf lkhdj klahdj dkhf." },
@@ -43,4 +43,4 @@ function SecondPage() {
     );
 };
 
-export default SecondPage;
+export default Svd;

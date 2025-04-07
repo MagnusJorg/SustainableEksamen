@@ -1,12 +1,12 @@
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
 import Layout from "./Layout";
-import SecondPage from "./views/SecondPage";
 import NotFound from "./views/NotFound";
 import "./App.css";
 import DefaultPage from "./views/DefaultPage";
 import DetailPage from "./views/DetailPage";
-import ThirdPage from "./views/ThirdPage";
-import Skoler from "./views/Skoler";
+import Oo from "./views/Oo";
+import Hvt from "./views/Hvt";
+import Svd from "./views/Svd";
 
 const router = createBrowserRouter([
   {
@@ -18,16 +18,16 @@ const router = createBrowserRouter([
         element: <DefaultPage />,
       },
       {
-        path: "/Skoler",
-        element: <Skoler/>
+        path: "/Hvt",
+        element: <Hvt/>
       },
       {
-        path: "/second",
-        element: <SecondPage />,
+        path: "/Svd",
+        element: <Svd />,
       },
       {
-        path: "/third",
-        element: <ThirdPage />,
+        path: "/Oo",
+        element: <Oo />,
       },
       {
         path: "/detail/:itemId",
