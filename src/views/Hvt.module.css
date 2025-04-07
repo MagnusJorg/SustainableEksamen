@@ -1,0 +1,14 @@
+.hvtsek1{
+    margin: 20px 40% 300px 80px;
+}
+
+.kolonne {
+    flex: 1;
+    padding: 20px;
+    min-height: 500px; /* så de får lidt højde også */
+}
+
+.hvtSek2 {
+    display: flex;
+    gap: 50px
+}

@@ -1,43 +1,45 @@
 import { useState } from "react";
-import AccordionItem from "../components/AccordionItem";
-
+import styles from './Hvt.module.css';
 
 function Hvt() {
-    const itemlist = [
-        { id: "1", name: "kirkebakken", desc: "Kirkebakken er en folkeskole" },
-        { id: "2", name: "eaaa", desc: "Eaaa er et erhvers akademi" },
-        { id: "3", name: "universitet", desc: "Universitet er et uni" },
-    ]
-
-    const [bcolor, setBcolor] = useState("white");
-    const [tcolor, setTcolor] = useState("black");
-    const [message, setMessage] = useState("Klik på skolerne for at se info");
-
-    const changeColor = () => {
-        if (bcolor === "grey") {
-            setBcolor("white");
-            setTcolor("black");
-        } else {
-            setBcolor("grey")
-            setTcolor("white");
-        }
-    }
-
-
     return (
-        <section style={{ backgroundColor: bcolor, color: tcolor }}>
-            <h1>Her er en liste over skoler</h1>
-            <div style={{ backgroundColor: bcolor, color: tcolor }}>
-                {itemlist.map((item, index) => (
-                    <AccordionItem key={index} oneitem={item} />
-                ))}
-            </div>
-            {message}
+        <main>
+            <section className={styles.hvtsek1}>
+                <h1>Hvad vi tilbyder</h1>
+                <p>
+                    Når nogen spørger: "Har du styr på jeres ESG-data?" <br />
+                    Så har du et konkret svar – med tal, besparelser og dokumentation, du kan sende videre med ro i maven.
+                </p>
+            </section>
 
-            <p><button onClick={changeColor}>Skift til darkmode </button></p>
-        </section>
-        
-    )
+            {/* Anden sektion med 3 kolonner */}
+            <section className={styles.hvtSek2}>
+                <div className={styles.kolonne}>
+                    <h2>ESG-tal</h2>
+                    <p>
+                        Du får data, der viser, hvor meget din hjemmeside sparer i CO₂ sat i kontekst og klar til at sende videre. 
+                        Perfekt til rapporter, møder med kunder eller når du skal vise ledelsen, at du faktisk gør noget.
+                    </p>
+                </div>
+
+                <div className={styles.kolonne}>
+                    <h2>Ressourceoptimering</h2>
+                    <p>
+                        Din hjemmeside kommer til at se præcis ud som før. Vi komprimerer og ressourceoptimerer det du allerede har, 
+                        så den bliver grønnere – og hurtigere.
+                    </p>
+                </div>
+
+                <div className={styles.kolonne}>
+                    <h2>Hurtig leveringen</h2>
+                    <p>
+                        Vi leverer ESG-dataene på under 3 dage. Du behøver ikke ændre noget – vi klarer det hele bag kulissen. 
+                        Hurtigt. Sikkert. Uden bøvl.
+                    </p>
+                </div>
+            </section>
+        </main>
+    );
 }
 
 export default Hvt;
