@@ -27,7 +27,6 @@
   background-color: transparent;
   color: #FFFCF9;
   padding: 0.5rem;
-  font-size: 1rem;
   flex: 1;
 }
 
@@ -51,7 +50,6 @@ textarea.inputFelt {
   background-color: var(--skrift);
   padding: 1rem 8rem; /* Øger størrelsen på knappen */
   border: none;
-  font-weight: bold;
   cursor: pointer;
   width: auto;
   align-self: flex-end; /* Placerer knappen i højre side af formularen */
