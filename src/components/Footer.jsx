@@ -5,8 +5,7 @@ export default function Footer() {
     return (
         <footer className={mystyle.footer}>
             <section className={mystyle.footerKolonne}>
-                <h2>Det var et lille udpluk</h2>
-                <p><em>men jeg er kun en mail væk, hvis du vil vide mere!</em></p>
+                <p><em>Ingen grøn snak <br /> - kun grønne resultater</em></p>
             </section>
 
             <section className={mystyle.kontakt}>
