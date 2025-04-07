@@ -5,14 +5,15 @@ export default function Headers() {
     return (
         <header>
             <div className="logo">
-                {/* Use direct path if image is in public folder */}
+                {/* billeder til header */}
                 <img src="/sundhedlogo.png" alt="Logo" />  
             </div>
             <nav>
                 <ul>
-                    <li>Ernæring</li>
-                    <li>Tips</li>
-                    <li>Om os</li>
+                    {/* nav links */}
+                    <li>HVAD TILBYDER VI</li>
+                    <li>SÅDAN VIRKER DET</li>
+                    <li>OM OS</li>
                 </ul>
             </nav>
         </header>
