@@ -1,6 +1,5 @@
-import mystyle from "./Kontakt.module.css"
+import mystyle from "./Kontakt.module.css";
 import React from 'react';
-import './Kontakt.css'; // Husk at linke til denne CSS-fil
 
 const Kontakt = () => {
   return (
