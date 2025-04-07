@@ -20,40 +20,49 @@
   display: flex;
   flex-direction: column;
   gap: 1rem;
+  width: 100%;
 }
 
 @media (min-width: 768px) {
   .inputRow {
     flex-direction: row;
+    gap: 1rem;
   }
 }
 
-.inputGroup {
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-}
-
-.inputGroup label {
-  margin-bottom: 0.5rem;
-}
-
-.inputGroup input,
-.inputGroup textarea {
+.inputFelt {
   border: 1px solid #FFFCF9;
   background-color: transparent;
   color: #FFFCF9;
   padding: 0.5rem;
   font-size: 1rem;
+  flex: 1;
+}
+
+.inputFelt::placeholder {
+  color: #FFFCF9;
+}
+
+textarea.inputFelt {
   resize: vertical;
+  flex: 1;
+  min-height: 300px;
+}
+
+.kontaktForm {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
 }
 
 .kontaktKnap {
   background-color: #FFFCF9;
   color: #0C1326;
-  padding: 0.75rem 2rem;
+  padding: 2rem 8rem; /* Øger størrelsen på knappen */
   border: none;
   font-weight: bold;
   cursor: pointer;
-  align-self: flex-start;
+  font-size: 1.5rem; /* Øger tekststørrelsen på knappen */
+  width: auto;
+  align-self: flex-end; /* Placerer knappen i højre side af formularen */
 }
