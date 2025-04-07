@@ -12,7 +12,6 @@
 
 /* Styling for hele headeren */
 .header {
-    background-color: #0A0F23;  /* Mørk baggrundsfarve */
     padding: 10px 40px;  /* Lidt luft rundt om indholdet */
   }
   
@@ -34,7 +33,7 @@
   
   /* Logo billedet */
   .logo img {
-    width: 30px;  
+    width: 30px;
   }
   
   /* Styler navigation links */
