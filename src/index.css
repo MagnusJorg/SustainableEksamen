@@ -2,6 +2,7 @@
     /* Farver */
     --skrift: #ffffff;
     --baggrund: #0C1326;
+    
 
     /* Font */
     --font: 'Helvetica', sans-serif;
@@ -18,6 +19,8 @@
     --p-linjeafstand: 1.6;
 }
 
+
+
 /* Globale elementer */
 body {
     margin: 0;
@@ -25,6 +28,7 @@ body {
     font-family: var(--font);
     background-color: var(--baggrund);
     color: var(--skrift);
+    height: 100%;
 }
 
 h1 {

@@ -1,6 +1,10 @@
-.hvtsek1{
-    margin: 20px 40% 300px 80px;
+.hvtsek1 {
+    margin: 60px auto;
+    max-width: 1000px;
+    text-align: center;
+    padding: 0 20px;
 }
+
 
 .kolonne {
     flex: 1;
@@ -10,5 +14,6 @@
 
 .hvtSek2 {
     display: flex;
-    gap: 50px
+    gap: 50px;
+    padding-top: 200px;
 }

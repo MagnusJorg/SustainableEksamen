@@ -7,11 +7,13 @@ function Layout() {
     return (
         <>
             <Header />
+
             <Hvidboks>
                 <main className="mainpart">
                     <Outlet />
                 </main>
             </Hvidboks>
+
             <Footer />
         </>
     );
