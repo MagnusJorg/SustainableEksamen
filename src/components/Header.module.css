@@ -10,10 +10,7 @@
 }
 
 
-/* Styling for hele headeren */
-.header {
-    padding: 10px 40px;  /* Lidt luft rundt om indholdet */
-  }
+
   
   /* Styling for navigationen */
   .navigation {
@@ -23,18 +20,19 @@
   }
   
   /* Logo sektion */
-  .logo {
-    display: flex;  /* Flex layout så billede og tekst står ved siden af hinanden */
-    align-items: center;  /* Centrer vertikalt */
-    gap: 10px;  /* Lidt afstand mellem billede og tekst */
-    color: white;  /* Hvid tekst */
-    font-weight: bold;  /* Gør teksten tyk */
+  .logoAnimation {
+    width: 100px;    /* Sætter bredden på animationen */
+    height: 100px;   /* Sætter højden på animationen */
+    /* Eller du kan bruge procentdele for responsiv størrelse */
+    /* width: 50%; height: auto; */
+    margin: 0 auto;  /* Centrerer animationen horisontalt */
   }
   
-  /* Logo billedet */
-  .logo img {
-    width: 30px;
+  .logo {
+    display: inline-block; /* Sørg for at linket er inline */
+    padding: 10px; /* Tilføjer lidt padding, hvis nødvendigt */
   }
+
   
   /* Styler navigation links */
   .navLinks {

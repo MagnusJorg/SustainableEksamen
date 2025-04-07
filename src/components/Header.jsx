@@ -9,13 +9,15 @@ import animationData from "../assets/logo-animation.json";
 
 export default function Header() {
     return (
-        <header className={mystyle.header}>  {/* Her tilføjer vi en className fra css modulet */}
+        <header className={mystyle.header}>  {/* Tilføjer className til css*/}
         <nav className={mystyle.navigation}> {/* Navigation wrapper */}
             
 
  {/* Logo animation med Link til forsiden */}
  <Link to="/" className={mystyle.logo}>
-                    <Lottie animationData={animationData} className={mystyle.logoAnimation} />
+                    <Lottie animationData={animationData} 
+                        loop={false} //Sætter den til kun at køre 1 gang
+                        className={mystyle.logoAnimation} />
                 </Link>
 
 
