@@ -10,21 +10,26 @@ const Kontakt = () => {
 
       <form className={mystyle.kontaktForm}>
         <div className={mystyle.inputRow}>
-          <div className={mystyle.inputGroup}>
-            <label htmlFor="email">Email:</label>
-            <input type="email" id="email" />
-          </div>
-
-          <div className={mystyle.inputGroup}>
-            <label htmlFor="tlf">Tlf:</label>
-            <input type="tel" id="tlf" />
-          </div>
+          <input
+            type="email"
+            id="email"
+            placeholder="Email:"
+            className={mystyle.inputFelt}
+          />
+          <input
+            type="tel"
+            id="tlf"
+            placeholder="Tlf:"
+            className={mystyle.inputFelt}
+          />
         </div>
 
-        <div className={mystyle.inputGroup}>
-          <label htmlFor="besked">Besked:</label>
-          <textarea id="besked" rows="6"></textarea>
-        </div>
+        <textarea
+          id="besked"
+          rows="6"
+          placeholder="Besked:"
+          className={mystyle.inputFelt}
+        ></textarea>
 
         <button type="submit" className={mystyle.kontaktKnap}>SEND</button>
       </form>
@@ -33,5 +38,3 @@ const Kontakt = () => {
 };
 
 export default Kontakt;
-
-
