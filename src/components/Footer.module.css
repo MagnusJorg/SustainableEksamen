@@ -1,0 +1,41 @@
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px 100px;
+    background-color: #F1F6F0;
+    color: #F17E51;
+}
+
+/* Venstre sektion (Tekst) */
+.footerKolonne h2 {
+    font-size: 5vw;
+    font-weight: bold;
+    margin: 0;
+}
+
+.footerKolonne p {
+    font-size: 4vw;
+    font-style: italic;
+    font-weight: 250;
+    margin: 10px 0 0;
+}
+
+/* Højre sektion (Links og kontakt) */
+.kontakt {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+}
+
+/* Giver linjerne samme bredde */
+.kontakt a {
+    text-decoration: none;
+    color: #F17E51;
+    font-size: 1.5vw;
+    margin: 10px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #F17E51; /* Ensartet linje */
+    width: 100%;
+    text-align: right; /* Sørger for at teksten er justeret til højre */
+}
