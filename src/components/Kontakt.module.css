@@ -1,13 +1,5 @@
-.kontaktSection {
-  background-color: #0C1326;
-  color: #FFFCF9;
-  padding: 2rem;
-}
 
-.kontaktOverskrift {
-  font-size: 1.5rem;
-  margin-bottom: 1.5rem;
-}
+
 
 .kontaktForm {
   max-width: 800px;
@@ -40,7 +32,7 @@
 }
 
 .inputFelt::placeholder {
-  color: #FFFCF9;
+  color: var(--skrift);
 }
 
 textarea.inputFelt {
@@ -56,13 +48,11 @@ textarea.inputFelt {
 }
 
 .kontaktKnap {
-  background-color: #FFFCF9;
-  color: #0C1326;
-  padding: 2rem 8rem; /* Øger størrelsen på knappen */
+  background-color: var(--skrift);
+  padding: 1rem 8rem; /* Øger størrelsen på knappen */
   border: none;
   font-weight: bold;
   cursor: pointer;
-  font-size: 1.5rem; /* Øger tekststørrelsen på knappen */
   width: auto;
   align-self: flex-end; /* Placerer knappen i højre side af formularen */
 }

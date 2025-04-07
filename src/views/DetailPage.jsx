@@ -1,6 +1,7 @@
 import { useParams } from "react-router-dom";
 import mystyle from "./DetailPage.module.css";
 
+
 export default function DetailPage() {
     const details = [
         { id: "1", details: "Details for item 1. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat." },

@@ -1,6 +1,7 @@
 import { useState } from "react";
 import AccordionItem from "../components/AccordionItem";
 
+
 function Hvt() {
     const itemlist = [
         { id: "1", name: "kirkebakken", desc: "Kirkebakken er en folkeskole" },

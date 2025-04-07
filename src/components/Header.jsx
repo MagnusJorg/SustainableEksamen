@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 import mystyle from "./Header.module.css";
 import Lottie from 'lottie-react';
 
+
 import animationData from "../assets/logo-animation.json";
 
 
@@ -12,10 +13,10 @@ export default function Header() {
         <nav className={mystyle.navigation}> {/* Navigation wrapper */}
             
 
- {/* Logo animation med Link til forsiden */}
+ {/* Logo animation med Link til forsiden 
  <Link to="/" className={mystyle.logo}>
                     <Lottie animationData={animationData} className={mystyle.logoAnimation} />
-                </Link>
+                </Link>*/}
 
 
             {/* Menu links */}

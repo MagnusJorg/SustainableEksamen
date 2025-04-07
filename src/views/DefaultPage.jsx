@@ -2,6 +2,7 @@ import { Link } from "react-router-dom"
 import mystyle from "./DefaultPage.module.css";
 
 
+
 export default function DefaultPage() {
 
     const itemlist = [

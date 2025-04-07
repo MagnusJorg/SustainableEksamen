@@ -1,6 +1,5 @@
 import { useState } from 'react';
 import mystyle from "./SecondPage.module.css";
-
 function Svd() {
     const itemlist = [
         { id: "1", name: "item 1", desc: "item 1 description. A fja laædsj æaljf puæaasr." },

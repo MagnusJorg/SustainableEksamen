@@ -1,0 +1,54 @@
+:root {
+    /* Farver */
+    --skrift: #ffffff;
+    --baggrund: #0C1326;
+
+    /* Font */
+    --font: 'Helvetica', sans-serif;
+
+    /* Typografi */
+    --h1-stoerrelse: 64px;
+    --h1-vaegt: 300;
+
+    --h2-stoerrelse: 32px;
+    --h2-vaegt: 700;
+
+    --p-stoerrelse: 18px;
+    --p-vaegt: 400;
+    --p-linjeafstand: 1.6;
+}
+
+/* Globale elementer */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: var(--font);
+    background-color: var(--baggrund);
+    color: var(--skrift);
+}
+
+h1 {
+    font-size: var(--h1-stoerrelse);
+    font-weight: var(--h1-vaegt);
+}
+
+h2 {
+    font-size: var(--h2-stoerrelse);
+    font-weight: var(--h2-vaegt);
+}
+
+p {
+    font-size: var(--p-stoerrelse);
+    font-weight: var(--p-vaegt);
+    line-height: var(--p-linjeafstand);
+}
+
+/* Universel.module.css */
+.hvidboks {
+    border: 2px solid white;
+    padding: 40px;
+    margin: 20px;
+    max-width: 86%;
+    margin-left: auto;
+    margin-right: auto;
+}

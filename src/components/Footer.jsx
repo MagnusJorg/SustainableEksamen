@@ -2,12 +2,13 @@ import { Link } from "react-router-dom";
 import mystyle from "./Footer.module.css";
 
 
+
 export default function Footer() {
     return (
         <footer className={mystyle.footer}>
             <section className={mystyle.footerKolonne}>
            {/* skrift ved siden af foooter */}
-                <p><em>Ingen grøn snak <br /> - kun grønne resultater</em></p>
+                <h1>Ingen grøn snak <br /> - kun grønne resultater</h1>
             </section>
              {/* Links */}
             <section className={mystyle.kontakt}>

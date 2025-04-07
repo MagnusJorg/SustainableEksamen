@@ -1,6 +1,7 @@
 import React from 'react';
 import mystyle from './Kontakt.module.css';
 
+
 const Kontakt = () => {
   return (
     <section className={mystyle.kontaktSection}>
@@ -31,7 +32,7 @@ const Kontakt = () => {
           className={mystyle.inputFelt}
         ></textarea>
 
-        <button type="submit" className={mystyle.kontaktKnap}>SEND</button>
+        <button type="submit" className={mystyle.kontaktKnap}><p>SEND</p></button>
       </form>
     </section>
   );
