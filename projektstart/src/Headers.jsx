@@ -10,7 +10,6 @@ export default function Headers() {
             </div>
             <nav>
                 <ul>
-                    <li>Træning</li>
                     <li>Ernæring</li>
                     <li>Tips</li>
                     <li>Om os</li>
