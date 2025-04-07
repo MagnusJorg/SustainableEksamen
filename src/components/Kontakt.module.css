@@ -1,51 +1,54 @@
-.kontakt-section {
+.kontaktSection {
   background-color: #0C1326;
   color: #FFFCF9;
   padding: 2rem;
 }
 
-.kontakt-overskrift {
+.kontaktOverskrift {
   font-size: 1.5rem;
   margin-bottom: 1.5rem;
 }
 
-.kontakt-form {
+.kontaktForm {
   max-width: 800px;
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
 }
 
-.input-row {
+.inputRow {
   display: flex;
   flex-direction: column;
   gap: 1rem;
 }
 
 @media (min-width: 768px) {
-  .input-row {
+  .inputRow {
     flex-direction: row;
   }
 }
 
-.input-felt {
+.inputGroup {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.inputGroup label {
+  margin-bottom: 0.5rem;
+}
+
+.inputGroup input,
+.inputGroup textarea {
   border: 1px solid #FFFCF9;
   background-color: transparent;
   color: #FFFCF9;
   padding: 0.5rem;
   font-size: 1rem;
-  width: 100%;
-}
-
-.input-felt::placeholder {
-  color: #FFFCF9;
-}
-
-textarea.input-felt {
   resize: vertical;
 }
 
-.kontakt-knap {
+.kontaktKnap {
   background-color: #FFFCF9;
   color: #0C1326;
   padding: 0.75rem 2rem;
