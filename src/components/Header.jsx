@@ -13,10 +13,10 @@ export default function Header() {
         <nav className={mystyle.navigation}> {/* Navigation wrapper */}
             
 
- {/* Logo animation med Link til forsiden 
+ {/* Logo animation med Link til forsiden */}
  <Link to="/" className={mystyle.logo}>
                     <Lottie animationData={animationData} className={mystyle.logoAnimation} />
-                </Link>*/}
+                </Link>
 
 
             {/* Menu links */}
