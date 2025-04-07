@@ -2,10 +2,57 @@
     display: flex;
     gap: 10px;
     color: white;
-    background-color: darkslategray;
     padding-left: 10px;
 }
 
 .linktext {
     color: white;
 }
+
+
+/* Styling for hele headeren */
+.header {
+    background-color: #0A0F23;  /* Mørk baggrundsfarve */
+    padding: 10px 40px;  /* Lidt luft rundt om indholdet */
+  }
+  
+  /* Styling for navigationen */
+  .navigation {
+    display: flex;  /* Flexbox layout */
+    justify-content: space-between;  /* Afstand mellem logo og menu */
+    align-items: center;  /* Centrer indhold vertikalt */
+  }
+  
+  /* Logo sektion */
+  .logo {
+    display: flex;  /* Flex layout så billede og tekst står ved siden af hinanden */
+    align-items: center;  /* Centrer vertikalt */
+    gap: 10px;  /* Lidt afstand mellem billede og tekst */
+    color: white;  /* Hvid tekst */
+    font-weight: bold;  /* Gør teksten tyk */
+  }
+  
+  /* Logo billedet */
+  .logo img {
+    width: 30px;  
+  }
+  
+  /* Styler navigation links */
+  .navLinks {
+    display: flex;  /* Flex layout til menuen */
+    gap: 30px;  /* Afstand mellem links */
+    list-style: none;  /* Fjerner prikker fra liste */
+  }
+  
+  .linktext {
+    color: white;  
+    text-decoration: none; 
+    font-weight: bold;  
+    font-size: 14px;  
+  }
+  
+  /* Tilføjer hover-effekt på linksene */
+  .linktext:hover {
+    color: #ddd;  
+  }
+  
