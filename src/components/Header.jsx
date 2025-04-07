@@ -1,16 +1,22 @@
 import { Link } from "react-router-dom";
 import mystyle from "./Header.module.css";
+import Lottie from 'lottie-react';
+
+import animationData from "../assets/logo-animation.json";
+
+
 
 export default function Header() {
     return (
         <header className={mystyle.header}>  {/* Her tilføjer vi en className fra css modulet */}
         <nav className={mystyle.navigation}> {/* Navigation wrapper */}
             
-            {/* Logo og tekst */}
-            <div className={mystyle.logo}>
-                {/* Billedet hentes fra public-mappen */}
-                <img src="/logo.png" alt="CSM logo" />
-            </div>
+
+ {/* Logo animation med Link til forsiden */}
+ <Link to="/" className={mystyle.logo}>
+                    <Lottie animationData={animationData} className={mystyle.logoAnimation} />
+                </Link>
+
 
             {/* Menu links */}
             <ul className={mystyle.navLinks}>
