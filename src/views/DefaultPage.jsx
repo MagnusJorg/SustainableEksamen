@@ -6,9 +6,10 @@ import mystyle from "./DefaultPage.module.css";
 export default function DefaultPage() {
 
     const itemlist = [
-        { id: "1", name: "item 1", desc: "item 1 description" },
-        { id: "2", name: "item 2", desc: "item 2 description" },
-        { id: "3", name: "item 3", desc: "item 3 description" },
+        { id: "1", name: "Bilkørsel", desc: "266,000 km" },
+        { id: "2", name: "Flyrejser", desc: "250,000 km" },
+        { id: "3", name: "El cykler", desc: "20,000,000 km" },
+        { id: "3", name: "CO2 optaget af", desc: "2,000 træer" }
     ]
     return (
   
@@ -19,12 +20,11 @@ export default function DefaultPage() {
                 – leveret på under 3 dage.
             </h1>
 <p>Dette svarer til</p>
-                <div className={mystyle.flexcards}>
+                <div className={mystyle.eksempler}>
                     {itemlist.map((item, index) => (
                         <div key={index} className={mystyle.card}>
                             <h1>{item.name}</h1>
                             <p>{item.desc}</p>
-                            <p><Link to={`/detail/${item.id}`}>Read more</Link></p>
                         </div>
                     ))}
                 </div>
