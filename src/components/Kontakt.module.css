@@ -41,10 +41,14 @@ textarea.inputFelt {
 }
 
 .kontaktForm {
+  max-width: 1000px;
+  width: 100%;
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
+  margin: auto;
 }
+
 
 .kontaktKnap {
   background-color: var(--skrift);
@@ -54,3 +58,4 @@ textarea.inputFelt {
   width: auto;
   align-self: flex-end; /* Placerer knappen i højre side af formularen */
 }
+
