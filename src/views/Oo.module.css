@@ -1,13 +1,11 @@
 .container {
-    background-color: #0A0F1B;
-    color: white;
-    padding: 4rem 2rem;
+    padding: 5rem 6rem;
 }
 
 .topSection {
     display: grid;
     grid-template-columns: 1fr;
-    gap: 3rem;
+    gap: 1rem;
     max-width: 1200px;
     margin: 0 auto;
 }
@@ -21,6 +19,7 @@
 
 .textContainer {
     max-width: 600px;
+    margin-top: 5rem;
 }
 
 .heading {
@@ -45,9 +44,8 @@
 }
 
 .icon {
-    width: 160px;
+    width: 25rem;
     height: auto;
-    margin-top: 2rem;
 }
 
 .profileSection {
@@ -55,7 +53,6 @@
     margin: 4rem auto 0;
     display: grid;
     gap: 2rem;
-    text-align: center;
 }
 
 @media (min-width: 768px) {
@@ -68,6 +65,8 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    text-align: left;
+    margin-bottom: 8rem;
 }
 
 .profileImage {
@@ -75,6 +74,10 @@
     max-width: 250px;
     height: auto;
     margin-bottom: 1rem;
+}
+
+.profileName, .contactInfo {
+    text-align: left;
 }
 
 .profileName {
@@ -85,8 +88,4 @@
 
 .contactInfo {
     margin-top: 0.5rem;
-}
-
-.kontaktSection {
-    margin-top: 4rem;
 }
