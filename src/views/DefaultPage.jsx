@@ -1,15 +1,20 @@
 import { Link } from "react-router-dom"
 import mystyle from "./DefaultPage.module.css";
 
+{/* Importerer ikonerne */}
+import bilIkon from "../assets/bil.webp";
+import flyIkon from "../assets/fly.webp";
+import træerIkon from "../assets/træer.webp";
+import cykelIkon from "../assets/cykel.webp";
 
 
 export default function DefaultPage() {
 
     const itemlist = [
-        { id: "1", name: "Bilkørsel", desc: "266,000 km" },
-        { id: "2", name: "Flyrejser", desc: "250,000 km" },
-        { id: "3", name: "El cykler", desc: "20,000,000 km" },
-        { id: "3", name: "CO2 optaget af", desc: "2,000 træer" }
+        { id: "1", name: "Bilkørsel", desc: "266,000 km", image: bilIkon},
+        { id: "2", name: "Flyrejser", desc: "250,000 km", image: flyIkon},
+        { id: "3", name: "El cykler", desc: "20,000,000 km", image: cykelIkon},
+        { id: "3", name: "CO2 optaget af", desc: "2,000 træer", image: træerIkon}
     ]
     return (
   
@@ -23,7 +28,8 @@ export default function DefaultPage() {
                 <div className={mystyle.eksempler}>
                     {itemlist.map((item, index) => (
                         <div key={index} className={mystyle.card}>
-                            <h1>{item.name}</h1>
+                            <img src={item.image} alt={item.name} className={mystyle.cardImage} /> {/* Placerer billede over h2 */}
+                            <h2>{item.name}</h2>
                             <p>{item.desc}</p>
                         </div>
                     ))}

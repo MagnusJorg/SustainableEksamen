@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 import mystyle from "./Header.module.css";
 import Lottie from 'lottie-react';
 
-
+{/* Tilføjer logoanimationen*/}
 import animationData from "../assets/logo-animation.json";
 
 
