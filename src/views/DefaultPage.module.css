@@ -6,20 +6,26 @@
     font-weight: bold;
 }
 
+.iconWrapper {
+  height: 100px; /* eller hvad der passer */
+  display: flex;
+  align-items: flex-end; /* Skubber ikon til bunden */
+  justify-content: center;
+}
 
 .ikoner img {
-    width: 80px;
+    /* width: 80px;
     height: auto;
-    margin-bottom: 10px;
+    margin-bottom: 10px; */
+    margin-top: auto; /* Skubber ikonerne ned til bunden */
+  width: 80px;
+  height: auto;
   }
 
 /* Styler eksemplerne*/
 .eksempler {
-    /* display: flex;
+    display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    margin-top: 10px; */
-    display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-  gap: 2rem;
+    margin-top: 10px;
 }
