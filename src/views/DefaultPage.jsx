@@ -6,6 +6,7 @@ import bilIkon from "../assets/bil.webp";
 import flyIkon from "../assets/fly.webp";
 import træerIkon from "../assets/træer.webp";
 import cykelIkon from "../assets/cykel.webp";
+import skyIkon from "../assets/sky.webp";
 
 
 export default function DefaultPage() {
@@ -19,11 +20,15 @@ export default function DefaultPage() {
     return (
   
             <section>
+                <div className={mystyle.headerWrapper}>
                 <h1>
                 Få <span style={{ color: 'green' }}>ESG-data</span> der dokumenterer <br />
                 op til 40 tons <span style={{ color: 'green' }}>CO₂e/år</span> besparelser. <br />
                 – leveret på under 3 dage.
             </h1>
+            <img src={skyIkon} alt="Sky" className={mystyle.skyImage} />
+</div>
+
 <p className={mystyle.underOverskrift}>Dette svarer til</p>
                 <div className={mystyle.eksempler}>
                     {itemlist.map((item, index) => (

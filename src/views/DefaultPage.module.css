@@ -3,6 +3,25 @@ h1{
   margin: 10%;
 }
 
+
+/* Wrapper for h1 og billede */
+.headerWrapper {
+  display: flex;
+  align-items: center;
+  position: relative; /* Containeren bliver referencen for positionering */
+}
+
+/* Billedet */
+.skyImage {
+  position: absolute; /* Billedet bliver positioneret i forhold til .headerWrapper */
+  top: 0; /* Justér denne værdi for at placere billedet, hvor du vil */
+  right: -40px; /* Justér denne værdi for at placere billedet lidt til højre */
+  height: auto;
+  z-index: -1; /* Sørg for, at billedet er bag teksten */
+}
+
+
+
 .underOverskrift{
   margin: 0 10%;
 }
