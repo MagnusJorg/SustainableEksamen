@@ -1,15 +1,19 @@
 .hvtsek1 {
-    margin: 60px auto;
+    margin-left: 100px;
     max-width: 1000px;
-    text-align: center;
-    padding: 0 20px;
 }
 
 
 .kolonne {
     flex: 1;
     padding: 20px;
+    border-right: 2px solid var(--skrift);
 }
+
+/* Fjerner stregen på sidste kolonne */
+.kolonne:last-child {
+    border-right: none;
+  }
 
 .hvtSek2 {
     display: flex;
