@@ -28,7 +28,9 @@ export default function DefaultPage() {
                 <div className={mystyle.eksempler}>
                     {itemlist.map((item, index) => (
                         <div key={index} className={mystyle.forklaring}>
-                            <img src={item.image} alt={item.name} className={mystyle.ikoner} /> {/* Placerer billede over h2 */}
+                             <div className={mystyle.iconWrapper}>
+    <img src={item.image} alt={item.name} className={mystyle.ikoner} />
+  </div> {/* Placerer billede over h2 */}
                             <h2>{item.name}</h2>
                             <p>{item.desc}</p>
                         </div>
