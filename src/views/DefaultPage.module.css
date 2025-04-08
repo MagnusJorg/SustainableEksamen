@@ -1,5 +1,5 @@
 
-h1{
+.headerWrapper h1{
   margin: 10%;
 }
 
@@ -13,7 +13,7 @@ h1{
 
 /* Sky ikonet  */
 .skyIkon {
-  position: absolute; /* Positioneret billedet i forhold til .headerWrapper */
+  position: absolute; /* Positionerer billedet i forhold til .headerWrapper */
   top: -30px; 
   right: 45px; /* Placerer billedet til højre for */
   z-index: -1; /* Sørger for, at billedet er bag teksten */
@@ -57,10 +57,9 @@ h1{
 .knap {
   background-color: white;
   color: #000;
-  padding: 1rem 2rem;
+  padding: 1.5rem 2.5rem;
   text-decoration: none;
   font-weight: bold;
-  border-radius: 4px;
   transition: 0.3s ease;
 }
 

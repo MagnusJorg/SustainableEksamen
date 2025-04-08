@@ -30,7 +30,7 @@ export default function DefaultPage() {
                     op til 40 tons <span style={{ color: 'green' }}>CO₂e/år</span> besparelser. <br />
                     – leveret på under 3 dage.
                 </h1>
-                <img src={skyIkon} alt="Sky" className={mystyle.skyIkon} />
+                <img src={skyIkon} alt="Sky ikon" className={mystyle.skyIkon} />
             </div>
 
             <h2 className={mystyle.underOverskrift}>Dette svarer til</h2>
