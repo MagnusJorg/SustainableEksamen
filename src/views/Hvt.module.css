@@ -1,12 +1,20 @@
 .hvtsek1 {
     margin-left: 100px;
     max-width: 1000px;
+    position: relative; /* gør at honden kan være absolut ift. overskriften */
 }
 
+.hond {
+    position: absolute;
+    top: 0;
+    right: 28%;
+    width: 250px;
+    height: auto;
+  }
 
 .kolonne {
     flex: 1;
-    padding: 20px;
+    padding: 0px 30px 0px 0px;
     border-right: 2px solid var(--skrift);
 }
 
@@ -17,6 +25,15 @@
 
 .hvtSek2 {
     display: flex;
-    gap: 50px;
+    gap: 30px;
     padding-top: 200px;
 }
+
+.kolonnebillede {
+    margin-top: 100px;
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
