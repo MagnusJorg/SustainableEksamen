@@ -14,8 +14,8 @@ h1{
 /* Sky ikonet  */
 .skyIkon {
   position: absolute; /* Positioneret billedet i forhold til .headerWrapper */
-  top: 0; 
-  right: -40px; /* Placerer billedet til højre for */
+  top: -30px; 
+  right: 45px; /* Placerer billedet til højre for */
   height: auto;
   z-index: -1; /* Sørger for, at billedet er bag teksten */
 }
@@ -53,7 +53,7 @@ h1{
 
 /* Knap wrapper */
 .knapWrapper {
-  margin-top: 2rem;
+  margin: 2rem;
   display: flex;
   justify-content: end;
 }

@@ -1,57 +1,78 @@
+.header {
+  margin: 0 4% 0 2%;
+}
+
+
+/* Styling for navigationen */
 .navigation {
-    display: flex;
-    gap: 10px;
-    color: white;
-    padding-left: 10px;
+  display: flex;
+  justify-content: space-between;
+  /* Afstand mellem logo og menu */
+  align-items: center;
+  /* Centrer indhold vertikalt */
+}
+
+/* Styling af logo  */
+.logoAnimation {
+  width: 100px;
+}
+
+.logo {
+  padding: 10px;
+  /* Tilføjer lidt padding for brugervenlighed */
+}
+
+
+/* Styler navigation links */
+.navLinks {
+  display: flex;
+  /* Flex layout til menuen */
+  gap: 30px;
+  list-style: none;
+  /* Fjerner prikker fra liste */
 }
 
 .linktext {
-    color: white;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
 }
 
-.header{
-  margin: 0% 4% 0% 2%;
+/* Tilføjer hover-effekt på linksene */
+.linktext:hover {
+  color: #ddd;
 }
 
-  
-  /* Styling for navigationen */
+
+
+
+/* Responsiv styling til mobil */
+@media screen and (max-width: 768px) {
   .navigation {
-    display: flex;  /* Flexbox layout */
-    justify-content: space-between;  /* Afstand mellem logo og menu */
-    align-items: center;  /* Centrer indhold vertikalt */
-  }
-  
-  /* Logo sektion */
-  .logoAnimation {
-    width: 100px;    /* Sætter bredden på animationen */
-    height: 100px;   /* Sætter højden på animationen */
-    /* Eller du kan bruge procentdele for responsiv størrelse */
-    /* width: 50%; height: auto; */
-    margin: 0 auto;  /* Centrerer animationen horisontalt */
-  }
-  
-  .logo {
-    display: inline-block; /* Sørg for at linket er inline */
-    padding: 10px; /* Tilføjer lidt padding, hvis nødvendigt */
+    padding-bottom: 40px;
   }
 
-  
-  /* Styler navigation links */
+  .logo {
+    align-self: flex-start;
+  }
+
+  /* Gør logoet lidt mindre på mobil */
+  .logoAnimation {
+    width: 80px;
+    /* Mindre logo på mobil */
+  }
+
   .navLinks {
-    display: flex;  /* Flex layout til menuen */
-    gap: 30px;  /* Afstand mellem links */
-    list-style: none;  /* Fjerner prikker fra liste */
+    flex-direction: column;
+    /* Menulinks bliver stablet vertikalt */
+    gap: 15px;
+    /* Mindre afstand mellem links */
+    text-align: right;
   }
-  
+
+  /* Gør tekstlinks mindre på mobil */
   .linktext {
-    color: white;  
-    text-decoration: none; 
-    font-weight: bold;  
-    font-size: 14px;  
+    font-size: 14px;
+    /* Mindre fontstørrelse på mobil */
   }
-  
-  /* Tilføjer hover-effekt på linksene */
-  .linktext:hover {
-    color: #ddd;  
-  }
-  
+}
