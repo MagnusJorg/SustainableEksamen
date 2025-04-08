@@ -1,45 +1,49 @@
-import { useState } from 'react';
-import mystyle from "./SecondPage.module.css";
-function Svd() {
-    const itemlist = [
-        { id: "1", name: "item 1", desc: "item 1 description. A fja laædsj æaljf puæaasr." },
-        { id: "2", name: "item 2", desc: "item 2 description. A fgsugf lkhdj klahdj dkhf." },
-        { id: "3", name: "item 3", desc: "item 3 description. A kpidf kfd jfkji uows lsr." },
-    ];
+import React from "react";
+import "./svd.css";
+import lys from '../assets/lys.svg';
 
-    const [bcolor, setBcolor] = useState("white");
-    const [tcolor, setTcolor] = useState("black");
-    const [message, setMessage] = useState("Click on an item to see its details");
+export default function Svd() {
+  const steps = [
+    {
+      title: "1. Få en gratis vurdering af din hjemmeside",
+      text: "Vi starter med at analysere din hjemmeside og giver dig et konkret estimat på, hvor meget CO₂ du kan forvente at spare – helt uforpligtende.",
+    },
+    {
+      title: "2. Vi optimerer - uden at ændre noget visuelt",
+      text: "Vi komprimerer billeder, scripts og mediefiler – men ændrer intet visuelt. Din hjemmeside kommer til at se ud præcis som før, den bliver bare grønnere og endnu hurtigere.",
+    },
+    {
+      title: "3. Du får ESG-data klar til rapport",
+      text: "Vi viser dig, hvor meget CO₂ din hjemmeside spare før og efter – regnet ud i tal og billeder. Så det er nemt at forstå, forklare og dokumentere.",
+    },
+  ];
 
-    const handleClick = (item) => {
-        setMessage(`Details for ${item.name} is: ${item.desc}`);
-    };
-
-    const changeColor = () => {
-        if (bcolor === "green") {
-            setBcolor("white");
-            setTcolor("black");
-        } else {
-            setBcolor("green")
-            setTcolor("white");
-        }
-    }
-
-    return (
-        <div style={{ backgroundColor: bcolor, color: tcolor }}>
-            <h1>Eventhandlers and useState</h1>
-            <ul>
-                {itemlist.map((item) => (
-                    <li className={mystyle.cursor} key={item.id} onClick={() => handleClick(item)}>
-                        {item.name}
-                    </li>
-                ))}
-            </ul>
-            {message}
-
-            <p><button onClick={changeColor}>Change color to green</button></p>
+  return (
+    <section className="how-section">
+      <div className="how-intro">
+        <div className="intro-text">
+          <h1>Sådan virker det</h1>
+          <p>En løsning, der respekterer din tid og dit ansvar <br /> – og gør det nemt at komme i mål.</p>
         </div>
-    );
-};
+        <div className="intro-graphic">
+          <img src={lys} alt="Lys idé grafik" className="intro-image" />
+        </div>
+      </div>
 
-export default Svd;
+      <div className="how-steps">
+        {steps.map((step, index) => (
+          <div className="step-row" key={index}>
+            <div className="step-text">
+              <h2>{step.title}</h2>
+              <p>{step.text}</p>
+            </div>
+            <div className="step-graphic">
+              {/* Motion graphic placeholder */}
+              <div className="motion-placeholder">🎞️</div>
+            </div>
+          </div>
+        ))}
+      </div>
+    </section>
+  );
+}

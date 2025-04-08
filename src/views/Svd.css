@@ -1,0 +1,83 @@
+.how-section {
+    padding: 4rem 7rem;
+  }
+  
+  .how-intro {
+    max-width: 1200px;
+    margin: 0 auto 5rem auto;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  
+  .intro-text h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  .intro-text p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+  }
+  
+  .intro-graphic {
+    display: flex;
+  }
+  
+  .how-steps {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+  }
+  
+  .step-row {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+  
+  .step-text h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  .step-text p {
+    line-height: 1.6;
+    font-size: 1rem;
+  }
+  
+  .step-graphic {
+    height: 200px;
+    background-color: white;
+    color: black;
+    border-radius: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .motion-placeholder {
+    font-size: 2rem;
+  }
+  
+  /* Responsivt layout */
+  @media (min-width: 768px) {
+    .how-intro {
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+    }
+  
+    .step-row {
+      flex-direction: row;
+      align-items: flex-start;
+      justify-content: space-between;
+    }
+  
+    .step-text, .step-graphic {
+      width: 48%;
+    }
+  }
+  
