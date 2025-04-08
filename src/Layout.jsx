@@ -8,13 +8,10 @@ function Layout() {
         <>
             <Hvidboks>
             <Header />
-            
-            
                 <main className="mainpart">
                     <Outlet />
                 </main>
             </Hvidboks>
-
             <Footer />
         </>
     );
