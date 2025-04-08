@@ -26,17 +26,17 @@ export default function DefaultPage() {
                 op til 40 tons <span style={{ color: 'green' }}>CO₂e/år</span> besparelser. <br />
                 – leveret på under 3 dage.
             </h1>
-            <img src={skyIkon} alt="Sky" className={mystyle.skyImage} />
+            <img src={skyIkon} alt="Sky" className={mystyle.skyIkon} />
 </div>
 
-<p className={mystyle.underOverskrift}>Dette svarer til</p>
+<h2 className={mystyle.underOverskrift}>Dette svarer til</h2>
                 <div className={mystyle.eksempler}>
                     {itemlist.map((item, index) => (
                         <div key={index} className={mystyle.forklaring}>
                              <div className={mystyle.ikonWrapper}>
     <img src={item.image} alt={item.name} className={mystyle.ikoner} />
   </div> {/* Placerer billede over h2 */}
-                            <h2>{item.name}</h2>
+                            <p><strong>{item.name}</strong></p>
                             <p>{item.desc}</p>
                         </div>
                     ))}

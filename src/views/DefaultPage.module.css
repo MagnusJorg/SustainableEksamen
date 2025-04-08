@@ -11,22 +11,22 @@ h1{
   position: relative; /* Containeren bliver referencen for positionering */
 }
 
-/* Billedet */
-.skyImage {
-  position: absolute; /* Billedet bliver positioneret i forhold til .headerWrapper */
-  top: 0; /* Justér denne værdi for at placere billedet, hvor du vil */
-  right: -40px; /* Justér denne værdi for at placere billedet lidt til højre */
+/* Sky ikonet  */
+.skyIkon {
+  position: absolute; /* Positioneret billedet i forhold til .headerWrapper */
+  top: 0; 
+  right: -40px; /* Placerer billedet til højre for */
   height: auto;
-  z-index: -1; /* Sørg for, at billedet er bag teksten */
+  z-index: -1; /* Sørger for, at billedet er bag teksten */
 }
 
 
-
+/* Underoverskrift */
 .underOverskrift{
-  margin: 0 10%;
+  margin: 0 0 1% 10%;
 }
 
-
+/* Ikon wrapper */
 .ikonWrapper {
   height: 100px; /* eller hvad der passer */
   display: flex;
@@ -34,6 +34,7 @@ h1{
   justify-content: center;
 }
 
+/* Ikoner */
 .ikoner img {
     margin-top: auto; /* Skubber ikonerne ned til bunden */
   width: 80px;
@@ -50,14 +51,14 @@ h1{
 }
 
 
-
+/* Knap wrapper */
 .knapWrapper {
   margin-top: 2rem;
   display: flex;
   justify-content: end;
 }
 
-
+/* Knap */
 .knap {
   background-color: white;
   color: #000; /* sort tekst */
@@ -72,4 +73,73 @@ h1{
 
 .knap:hover {
   background-color: #eaeaea; /* lidt grå ved hover */
+}
+
+
+
+/* Responsivitet for mobil - når skærmstørrelsen er under 768px */
+@media (max-width: 768px) {
+  /* Header Wrapper */
+  .headerWrapper {
+    flex-direction: column; /* Gør, at headeren bliver vertikal */
+    align-items: center; /* Centrerer indholdet */
+  }
+
+  /* Sky ikon */
+  .skyIkon {
+    right: -20px; /* Flytter skyen tættere på */
+    width: 150px; /* Gør skyen mindre */
+  }
+
+  /* Underoverskrift */
+  .underOverskrift {
+    margin: 0 10% 1% 10%; /* Ændrer marginen for bedre responsivitet */
+    text-align: center; /* Centrerer teksten */
+  }
+
+  /* Ikon-wrapper */
+  .ikonWrapper {
+    flex-direction: column; /* Gør ikonerne vertikale på mobilen */
+    margin: 1rem 0; /* Tilføjer lidt afstand mellem ikoner */
+  }
+
+  /* Eksempler */
+  .eksempler {
+    display: flex;
+    flex-direction: column; /* Gør eksemplerne vertikale */
+    align-items: center; /* Centrerer eksemplerne */
+    margin: 0 5%; /* Ændrer marginen for at give bedre afstand */
+  }
+
+  /* Knap-wrapper */
+  .knapWrapper {
+    justify-content: center; /* Centrerer knappen */
+    width: 100%; /* Sørger for, at knappen er bredere på mobilen */
+  }
+
+  /* Knap */
+  .knap {
+    width: 80%; /* Gør knappen bredere på mobilen */
+    padding: 1rem 1.5rem;
+    font-size: 1rem; /* Mindre fontstørrelse */
+  }
+}
+
+/* Responsivitet for ekstra små skærme - når skærmstørrelsen er under 480px */
+@media (max-width: 480px) {
+  /* Header Wrapper */
+  .headerWrapper {
+    padding: 0 10%; /* Giver lidt padding for at undgå, at tekst går ud over kanten */
+  }
+
+  /* Eksempler */
+  .eksempler {
+    margin: 0 2%; /* Mindre margin for at få plads på små skærme */
+  }
+
+  /* Knap */
+  .knap {
+    width: 90%; /* Gør knappen endnu bredere på ekstra små skærme */
+    font-size: 0.9rem; /* Yderligere reducerer fontstørrelsen */
+  }
 }
