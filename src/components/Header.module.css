@@ -1,69 +1,78 @@
-.header{
+.header {
   margin: 0 4% 0 2%;
 }
 
 
 /* Styling for navigationen */
 .navigation {
-    display: flex;
-    justify-content: space-between;  /* Afstand mellem logo og menu */
-    align-items: center;  /* Centrer indhold vertikalt */
+  display: flex;
+  justify-content: space-between;
+  /* Afstand mellem logo og menu */
+  align-items: center;
+  /* Centrer indhold vertikalt */
 }
 
-  /* Styling af logo  */
-  .logoAnimation {
-    width: 100px;   
-  }
-  
-  .logo {
-    padding: 10px; /* Tilføjer lidt padding for brugervenlighed */
-  }
+/* Styling af logo  */
+.logoAnimation {
+  width: 100px;
+}
 
-  
-  /* Styler navigation links */
-  .navLinks {
-    display: flex;  /* Flex layout til menuen */
-    gap: 30px; 
-    list-style: none;  /* Fjerner prikker fra liste */
-  }
-  
-  .linktext {
-    color: white;  
-    text-decoration: none; 
-    font-weight: bold;  
-  }
-  
-  /* Tilføjer hover-effekt på linksene */
-  .linktext:hover {
-    color: #ddd;  
-  }
-  
+.logo {
+  padding: 10px;
+  /* Tilføjer lidt padding for brugervenlighed */
+}
 
 
+/* Styler navigation links */
+.navLinks {
+  display: flex;
+  /* Flex layout til menuen */
+  gap: 30px;
+  list-style: none;
+  /* Fjerner prikker fra liste */
+}
 
-  /* Responsiv styling til mobil */
+.linktext {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* Tilføjer hover-effekt på linksene */
+.linktext:hover {
+  color: #ddd;
+}
+
+
+
+
+/* Responsiv styling til mobil */
 @media screen and (max-width: 768px) {
-.navigation{
-  padding-bottom: 40px;
-}
+  .navigation {
+    padding-bottom: 40px;
+  }
 
-.logo{
-  align-self: flex-start; 
-}
+  .logo {
+    align-self: flex-start;
+  }
 
   /* Gør logoet lidt mindre på mobil */
   .logoAnimation {
-    width: 80px; /* Mindre logo på mobil */
+    width: 80px;
+    /* Mindre logo på mobil */
   }
 
   .navLinks {
-    flex-direction: column; /* Menulinks bliver stablet vertikalt */
-    gap: 15px; /* Mindre afstand mellem links */
+    flex-direction: column;
+    /* Menulinks bliver stablet vertikalt */
+    gap: 15px;
+    /* Mindre afstand mellem links */
     text-align: right;
   }
 
   /* Gør tekstlinks mindre på mobil */
   .linktext {
-    font-size: 14px; /* Mindre fontstørrelse på mobil */
+    font-size: 14px;
+    /* Mindre fontstørrelse på mobil */
   }
 }
