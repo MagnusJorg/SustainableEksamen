@@ -49,18 +49,29 @@
   }
   
   .step-graphic {
-    height: 200px;
-    background-color: white;
-    color: black;
-    border-radius: 1rem;
+    width: 100%;
+    height: 100%;
     display: flex;
-    align-items: center;
     justify-content: center;
+    align-items: center;
   }
   
-  .motion-placeholder {
-    font-size: 2rem;
+  .step-video, .step-lottie {
+    width: 100%; /* Fylder hele containerens bredde */
+    height: auto; /* Bevarer forholdet mellem bredde og højde */
+    max-width: 500px; /* Sætter en maks-bredde på videoer og Lottie-animatioer */
+    max-height: 400px; /* Maks højde, du kan justere den efter behov */
   }
+  
+  .step-video {
+    object-fit: cover; /* Sørger for at videoen fylder containeren korrekt */
+  }
+  
+  .step-lottie {
+    width: 100%; /* Fylder hele containerens bredde */
+    height: auto; /* Bevarer forholdet mellem bredde og højde */
+  }
+  
   
   /* Responsivt layout */
   @media (min-width: 768px) {
@@ -80,4 +91,6 @@
       width: 48%;
     }
   }
+
+  
   
