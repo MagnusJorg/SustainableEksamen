@@ -12,11 +12,11 @@ export default function Footer() {
             </section>
              {/* Links */}
             <section className={mystyle.kontakt}>
-                <Link to="/">FORIDE</Link>
+                <Link to="/">FORSIDE</Link>
                 <Link to="/Hvt">HVAD VI TILBYDER</Link>
                 <Link to="/Svd">SÅDAN VIRKER DET</Link>
                 <Link to="/Oo">OM OS</Link>
-                <a href="mailto:Magnusjorgen@gmail.com">csm@kontakt.com</a>
+                <a href="mailto:Magnusjorgen@gmail.com">CsmKontakt@gmail.com</a>
             </section>
         </footer>
     );
