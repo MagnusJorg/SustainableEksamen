@@ -1,6 +1,3 @@
-
-
-
 .kontaktForm {
   max-width: 800px;
   display: flex;
@@ -19,6 +16,10 @@
   .inputRow {
     flex-direction: row;
     gap: 1rem;
+  }
+  .kontaktKnap {
+    width: 15rem; /* Fast bredde på større skærme */
+    align-self: flex-end; /* Placerer knappen i højre side af formularen */
   }
 }
 
@@ -49,13 +50,20 @@ textarea.inputFelt {
   margin: auto;
 }
 
-
 .kontaktKnap {
   background-color: var(--skrift);
-  padding: 1rem 8rem; /* Øger størrelsen på knappen */
   border: none;
   cursor: pointer;
-  width: auto;
+  width: auto; /* Bruges til at ændre knappen dynamisk */
+  padding: 1rem 8rem; /* Standard padding */
   align-self: flex-end; /* Placerer knappen i højre side af formularen */
 }
 
+/* Responsiv justering for mobile enheder */
+@media (max-width: 768px) {
+  .kontaktKnap {
+    width: 100%; /* Knappen fylder hele bredden på små skærme */
+    align-self: stretch; /* Gør knappen responsiv i bredden */
+    padding: 1rem; /* Mindre padding på mobilskærme */
+  }
+}

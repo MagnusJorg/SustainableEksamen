@@ -2,6 +2,7 @@ import React from "react";
 import "./svd.css";
 import lys from '../assets/lys.svg';
 import Lottie from "lottie-react";
+import Kontakt from '../components/Kontakt';  {/* Rette stavemissen her */}
 
 import step1Anim from "../assets/step1.webm"; // Video
 import step2Anim from "../assets/step2.json"; // Video
@@ -65,6 +66,9 @@ export default function Svd() {
           </div>
         ))}
       </div>
+      <section>
+        <Kontakt />
+      </section>
     </section>
   );
 }

@@ -13,21 +13,16 @@ const Kontakt = () => {
         <div className={mystyle.inputRow}>
           <input
             type="email"
-            id="email"
             placeholder="Email:"
             className={mystyle.inputFelt}
           />
           <input
-            type="tel"
-            id="tlf"
             placeholder="Tlf:"
             className={mystyle.inputFelt}
           />
         </div>
 
         <textarea
-          id="besked"
-          rows="6"
           placeholder="Besked:"
           className={mystyle.inputFelt}
         ></textarea>

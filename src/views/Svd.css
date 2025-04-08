@@ -1,7 +1,12 @@
 .how-section {
     padding: 4rem 7rem;
   }
-  
+  /* På meget små enheder (f.eks. mobiltelefoner med skærme under 480px) */
+@media (max-width: 480px) {
+  .how-section {
+    padding: 1rem 2rem; /* Yderligere justering af padding for små skærme */
+  }
+}
   .how-intro {
     max-width: 1200px;
     margin: 0 auto 5rem auto;

@@ -6,7 +6,7 @@
     display: grid;
     grid-template-columns: 1fr;
     gap: 1rem;
-    max-width: 1200px;
+    max-width: 100%;
     margin: 0 auto;
 }
 
@@ -19,7 +19,6 @@
 
 .textContainer {
     max-width: 600px;
-    margin-top: 5rem;
 }
 
 .heading {
@@ -29,7 +28,6 @@
 }
 
 .paragraph {
-    margin-bottom: 1.25rem;
     line-height: 1.6;
 }
 
@@ -73,7 +71,6 @@
     width: 100%;
     max-width: 250px;
     height: auto;
-    margin-bottom: 1rem;
 }
 
 .profileName, .contactInfo {
@@ -83,9 +80,18 @@
 .profileName {
     font-size: 1.25rem;
     font-weight: 600;
-    margin-bottom: 0.25rem;
+    margin-bottom: 0.5rem; /* Mindre mellemrum mellem navn og kontaktinfo */
 }
 
-.contactInfo {
-    margin-top: 0.5rem;
+.profileCard p {
+    margin: 0; /* Fjern margin mellem p-tekster */
+    padding: 0.25rem 0; /* Små polstringer for at reducere mellemrum */
+}
+
+.profileCard .contactInfo {
+    margin-bottom: 0.25rem; /* Reducer marginen specifikt for kontaktinfo */
+}
+
+.profileCard .profileName {
+    margin-bottom: 0.5rem; /* Mindre mellemrum mellem navn og kontaktinfo */
 }
