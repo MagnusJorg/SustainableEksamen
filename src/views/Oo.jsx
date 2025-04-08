@@ -5,7 +5,7 @@ import Kontakt from '../components/Kontakt';
 import Image1 from '../assets/sandra.webp';
 import Image2 from '../assets/claire.webp';
 import Image3 from '../assets/magnus.webp';
-import OoiIcon from '../assets/ooi.webp';
+import OoiIcon from '../assets/ooi.svg';
 
 function OmOs() {
     return (
