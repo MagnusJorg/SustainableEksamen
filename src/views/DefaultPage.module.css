@@ -16,7 +16,6 @@ h1{
   position: absolute; /* Positioneret billedet i forhold til .headerWrapper */
   top: -30px; 
   right: 45px; /* Placerer billedet til højre for */
-  height: auto;
   z-index: -1; /* Sørger for, at billedet er bag teksten */
 }
 
@@ -86,7 +85,6 @@ h1{
 
   /* Eksempler */
   .eksempler {
-    display: flex;
     flex-wrap: wrap;
   }
 
