@@ -8,7 +8,7 @@ h1{
 .headerWrapper {
   display: flex;
   align-items: center;
-  position: relative; /* Containeren bliver referencen for positionering */
+  position: relative; /* Containeren bliver referencen for positionering af skyIkon */
 }
 
 /* Sky ikonet  */
@@ -28,17 +28,14 @@ h1{
 
 /* Ikon wrapper */
 .ikonWrapper {
-  height: 100px; /* eller hvad der passer */
+  height: 100px;
   display: flex;
   align-items: flex-end; /* Skubber ikon til bunden */
-  justify-content: center;
 }
 
 /* Ikoner */
 .ikoner img {
-    margin-top: auto; /* Skubber ikonerne ned til bunden */
-  width: 80px;
-  height: auto;
+  margin-top: auto;
   }
 
 
@@ -46,7 +43,6 @@ h1{
 .eksempler {
     display: flex;
     justify-content: space-between;
-    flex-wrap: wrap;
     margin: 0 10%;
 }
 
@@ -61,14 +57,12 @@ h1{
 /* Knap */
 .knap {
   background-color: white;
-  color: #000; /* sort tekst */
+  color: #000;
   padding: 1rem 2rem;
   text-decoration: none;
   font-weight: bold;
   border-radius: 4px;
-  border: 1px solid white;
   transition: 0.3s ease;
-  display: inline-block;
 }
 
 .knap:hover {
@@ -79,67 +73,31 @@ h1{
 
 /* Responsivitet for mobil - når skærmstørrelsen er under 768px */
 @media (max-width: 768px) {
-  /* Header Wrapper */
-  .headerWrapper {
-    flex-direction: column; /* Gør, at headeren bliver vertikal */
-    align-items: center; /* Centrerer indholdet */
-  }
-
+ h1{
+  font-size: 35px;
+  margin-bottom: 120px;
+ }
+ 
   /* Sky ikon */
   .skyIkon {
-    right: -20px; /* Flytter skyen tættere på */
-    width: 150px; /* Gør skyen mindre */
+    display: none;
   }
 
-  /* Underoverskrift */
-  .underOverskrift {
-    margin: 0 10% 1% 10%; /* Ændrer marginen for bedre responsivitet */
-    text-align: center; /* Centrerer teksten */
-  }
-
-  /* Ikon-wrapper */
-  .ikonWrapper {
-    flex-direction: column; /* Gør ikonerne vertikale på mobilen */
-    margin: 1rem 0; /* Tilføjer lidt afstand mellem ikoner */
-  }
 
   /* Eksempler */
   .eksempler {
     display: flex;
-    flex-direction: column; /* Gør eksemplerne vertikale */
-    align-items: center; /* Centrerer eksemplerne */
-    margin: 0 5%; /* Ændrer marginen for at give bedre afstand */
+    flex-wrap: wrap;
   }
 
   /* Knap-wrapper */
   .knapWrapper {
-    justify-content: center; /* Centrerer knappen */
-    width: 100%; /* Sørger for, at knappen er bredere på mobilen */
+    margin-left: 0;
   }
 
   /* Knap */
   .knap {
     width: 80%; /* Gør knappen bredere på mobilen */
-    padding: 1rem 1.5rem;
-    font-size: 1rem; /* Mindre fontstørrelse */
-  }
-}
-
-/* Responsivitet for ekstra små skærme - når skærmstørrelsen er under 480px */
-@media (max-width: 480px) {
-  /* Header Wrapper */
-  .headerWrapper {
-    padding: 0 10%; /* Giver lidt padding for at undgå, at tekst går ud over kanten */
-  }
-
-  /* Eksempler */
-  .eksempler {
-    margin: 0 2%; /* Mindre margin for at få plads på små skærme */
-  }
-
-  /* Knap */
-  .knap {
-    width: 90%; /* Gør knappen endnu bredere på ekstra små skærme */
-    font-size: 0.9rem; /* Yderligere reducerer fontstørrelsen */
+    padding: 20px 20.5px;
   }
 }
