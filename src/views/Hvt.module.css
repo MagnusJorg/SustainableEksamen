@@ -1,7 +1,6 @@
 .hvtsek1 h1{
     margin: 0 0 40px 0;
 }
-
 .hvtsek1 {
     margin: 100px 0 0 100px;
     margin-left: 100px;
@@ -18,13 +17,13 @@
   }
 
   .kolonne {
-    flex: 1;                        /* Gør dem lige store */
+    flex: 1; /* Gør dem lige store */
     display: flex;
     flex-direction: column;
-    padding: 0 40px;                /* Undgå fast bredde og overdreven padding */
+    padding: 0 40px; /* Undgå fast bredde og overdreven padding */
     border-right: 2px solid var(--skrift);
-    min-width: 0;                   /* VIGTIGT i Flex for at undgå overflow */
-    box-sizing: border-box;        /* Sørg for padding ikke udvider elementet */
+    min-width: 0;  /* VIGTIGT i Flex for at undgå overflow */
+    box-sizing: border-box; /* Sørg for padding ikke udvider elementet */
   }
 
 /* Fjerner stregen på sidste kolonne */
@@ -34,7 +33,7 @@
 
 .hvtSek2 {
     display: flex;
-    padding: 200px 100px 100px 100px;
+    padding: 200px 30px 100px 30px;
     flex-wrap: wrap; /* Valgfrit hvis du vil tillade dem at hoppe ned på små skærme */
 }
 
@@ -45,4 +44,24 @@
     display: block;
     margin-left: auto;
     margin-right: auto;
+  }
+
+  @media screen and (max-width: 1000px) {
+    .hvtSek2 {
+      flex-direction: column; /* Stack kolonner */
+    }
+  
+    .kolonne {
+        max-width: 400px;
+        border-right: none; /* Fjern stregen */
+        display: flex;
+    }
+  
+    .kolonne:last-child {
+      border-bottom: none; /* Fjern sidste streg */
+    }
+  
+    .hond {
+        display: none;
+    }
   }
