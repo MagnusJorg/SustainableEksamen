@@ -51,11 +51,10 @@ textarea.inputFelt {
 }
 
 .kontaktKnap {
-  background-color: var(--skrift);
   border: none;
   cursor: pointer;
   width: auto; /* Bruges til at ændre knappen dynamisk */
-  padding: 1rem 8rem; /* Standard padding */
+  padding: 5px 110px; /* Standard padding */
   align-self: flex-end; /* Placerer knappen i højre side af formularen */
 }
 
