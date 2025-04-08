@@ -6,6 +6,7 @@ import bilIkon from "../assets/bil.webp";
 import flyIkon from "../assets/fly.webp";
 import træerIkon from "../assets/træer.webp";
 import cykelIkon from "../assets/cykel.webp";
+import skyIkon from "../assets/sky.webp";
 
 
 export default function DefaultPage() {
@@ -19,21 +20,40 @@ export default function DefaultPage() {
     return (
   
             <section>
+                <div className={mystyle.headerWrapper}>
                 <h1>
-                Få <span style={{ color: 'green' }}>ESG-data</span> der dokumenterer 
-                op til 40 tons <span style={{ color: 'green' }}>CO₂e/år</span> besparelser.
+                Få <span style={{ color: 'green' }}>ESG-data</span> der dokumenterer <br />
+                op til 40 tons <span style={{ color: 'green' }}>CO₂e/år</span> besparelser. <br />
                 – leveret på under 3 dage.
             </h1>
-<p>Dette svarer til</p>
+            <img src={skyIkon} alt="Sky" className={mystyle.skyImage} />
+</div>
+
+<p className={mystyle.underOverskrift}>Dette svarer til</p>
                 <div className={mystyle.eksempler}>
                     {itemlist.map((item, index) => (
                         <div key={index} className={mystyle.forklaring}>
-                            <img src={item.image} alt={item.name} className={mystyle.ikoner} /> {/* Placerer billede over h2 */}
+                             <div className={mystyle.ikonWrapper}>
+    <img src={item.image} alt={item.name} className={mystyle.ikoner} />
+  </div> {/* Placerer billede over h2 */}
                             <h2>{item.name}</h2>
                             <p>{item.desc}</p>
                         </div>
                     ))}
                 </div>
+
+
+
+ {/* KNAP */}
+ <div className={mystyle.knapWrapper}>
+    <Link to="/Svd" className={mystyle.knap}>
+      SÅDAN VIRKER DET →
+    </Link>
+  </div>
+
+
+
+
             </section>
 
     );

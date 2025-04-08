@@ -6,9 +6,10 @@ import Hvidboks from "./components/Universel";
 function Layout() {
     return (
         <>
-            <Header />
-
             <Hvidboks>
+            <Header />
+            
+            
                 <main className="mainpart">
                     <Outlet />
                 </main>

@@ -1,25 +1,75 @@
 
-
-
-/* Style for h1 inde i hver card */
-.forklaring h2 {
-    font-weight: bold;
+h1{
+  margin: 10%;
 }
 
 
+/* Wrapper for h1 og billede */
+.headerWrapper {
+  display: flex;
+  align-items: center;
+  position: relative; /* Containeren bliver referencen for positionering */
+}
+
+/* Billedet */
+.skyImage {
+  position: absolute; /* Billedet bliver positioneret i forhold til .headerWrapper */
+  top: 0; /* Justér denne værdi for at placere billedet, hvor du vil */
+  right: -40px; /* Justér denne værdi for at placere billedet lidt til højre */
+  height: auto;
+  z-index: -1; /* Sørg for, at billedet er bag teksten */
+}
+
+
+
+.underOverskrift{
+  margin: 0 10%;
+}
+
+
+.ikonWrapper {
+  height: 100px; /* eller hvad der passer */
+  display: flex;
+  align-items: flex-end; /* Skubber ikon til bunden */
+  justify-content: center;
+}
+
 .ikoner img {
-    width: 80px;
-    height: auto;
-    margin-bottom: 10px;
+    margin-top: auto; /* Skubber ikonerne ned til bunden */
+  width: 80px;
+  height: auto;
   }
+
 
 /* Styler eksemplerne*/
 .eksempler {
-    /* display: flex;
+    display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    margin-top: 10px; */
-    display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-  gap: 2rem;
+    margin: 0 10%;
+}
+
+
+
+.knapWrapper {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: end;
+}
+
+
+.knap {
+  background-color: white;
+  color: #000; /* sort tekst */
+  padding: 1rem 2rem;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 4px;
+  border: 1px solid white;
+  transition: 0.3s ease;
+  display: inline-block;
+}
+
+.knap:hover {
+  background-color: #eaeaea; /* lidt grå ved hover */
 }
