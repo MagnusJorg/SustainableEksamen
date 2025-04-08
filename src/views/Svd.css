@@ -7,6 +7,11 @@
     padding: 1rem 2rem; /* Yderligere justering af padding for små skærme */
   }
 }
+@media (max-width: 1100px) {
+  .intro-image {
+    display: none;
+  }
+}
   .how-intro {
     max-width: 1200px;
     margin: 0 auto 5rem auto;
@@ -16,12 +21,10 @@
   }
   
   .intro-text h1 {
-    font-size: 2.5rem;
     margin-bottom: 1rem;
   }
   
   .intro-text p {
-    font-size: 1.1rem;
     line-height: 1.6;
   }
   
@@ -44,13 +47,11 @@
   }
   
   .step-text h2 {
-    font-size: 1.5rem;
     margin-bottom: 1rem;
   }
   
   .step-text p {
     line-height: 1.6;
-    font-size: 1rem;
   }
   
   .step-graphic {

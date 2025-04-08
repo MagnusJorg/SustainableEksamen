@@ -2,6 +2,11 @@
     padding: 5rem 5rem;
 }
 
+@media (max-width: 480px) {
+    .container {
+      padding: 1rem 2rem; /* Yderligere justering af padding for små skærme */
+    }
+}
 .topSection {
     display: grid;
     grid-template-columns: 1fr;
@@ -22,8 +27,6 @@
 }
 
 .heading {
-    font-size: 2.5rem;
-    font-weight: 600;
     margin-bottom: 1.5rem;
 }
 
@@ -78,8 +81,6 @@
 }
 
 .profileName {
-    font-size: 1.25rem;
-    font-weight: 600;
     margin-bottom: 0.5rem; /* Mindre mellemrum mellem navn og kontaktinfo */
 }
 
