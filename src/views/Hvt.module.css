@@ -1,22 +1,31 @@
+.hvtsek1 h1{
+    margin: 0 0 40px 0;
+}
+
 .hvtsek1 {
+    margin: 100px 0 0 100px;
     margin-left: 100px;
-    max-width: 1000px;
+    max-width: 700px;
     position: relative; /* gør at honden kan være absolut ift. overskriften */
 }
 
 .hond {
     position: absolute;
-    top: 0;
-    right: 28%;
-    width: 250px;
+    top: -40px;
+    right: -101px;
+    width: auto;
     height: auto;
   }
 
-.kolonne {
-    flex: 1;
-    padding: 0px 30px 0px 0px;
+  .kolonne {
+    flex: 1;                        /* Gør dem lige store */
+    display: flex;
+    flex-direction: column;
+    padding: 0 40px;                /* Undgå fast bredde og overdreven padding */
     border-right: 2px solid var(--skrift);
-}
+    min-width: 0;                   /* VIGTIGT i Flex for at undgå overflow */
+    box-sizing: border-box;        /* Sørg for padding ikke udvider elementet */
+  }
 
 /* Fjerner stregen på sidste kolonne */
 .kolonne:last-child {
@@ -25,13 +34,13 @@
 
 .hvtSek2 {
     display: flex;
-    gap: 30px;
-    padding-top: 200px;
+    padding: 200px 100px 100px 100px;
+    flex-wrap: wrap; /* Valgfrit hvis du vil tillade dem at hoppe ned på små skærme */
 }
 
 .kolonnebillede {
     margin-top: 100px;
-    max-width: 100%;
+    max-width: 200px;
     height: auto;
     display: block;
     margin-left: auto;

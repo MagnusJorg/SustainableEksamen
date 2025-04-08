@@ -24,7 +24,7 @@ function Hvt() {
                 </div>
 
                 <div className={styles.kolonne}>
-                    <h2>Ressourceoptimering</h2>
+                    <h2>Ressource optimering</h2>
                     <p>
                         Din hjemmeside kommer til at se præcis ud som før. Vi komprimerer og ressourceoptimerer det du allerede har,
                         så den bliver grønnere – og hurtigere.
