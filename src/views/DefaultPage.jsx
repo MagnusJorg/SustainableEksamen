@@ -20,15 +20,15 @@ export default function DefaultPage() {
   
             <section>
                 <h1>
-                Få <span style={{ color: 'green' }}>ESG-data</span> der dokumenterer 
-                op til 40 tons <span style={{ color: 'green' }}>CO₂e/år</span> besparelser.
+                Få <span style={{ color: 'green' }}>ESG-data</span> der dokumenterer <br />
+                op til 40 tons <span style={{ color: 'green' }}>CO₂e/år</span> besparelser. <br />
                 – leveret på under 3 dage.
             </h1>
-<p>Dette svarer til</p>
+<p className={mystyle.underOverskrift}>Dette svarer til</p>
                 <div className={mystyle.eksempler}>
                     {itemlist.map((item, index) => (
                         <div key={index} className={mystyle.forklaring}>
-                             <div className={mystyle.iconWrapper}>
+                             <div className={mystyle.ikonWrapper}>
     <img src={item.image} alt={item.name} className={mystyle.ikoner} />
   </div> {/* Placerer billede over h2 */}
                             <h2>{item.name}</h2>
@@ -36,6 +36,19 @@ export default function DefaultPage() {
                         </div>
                     ))}
                 </div>
+
+
+
+ {/* KNAP */}
+ <div className={mystyle.knapWrapper}>
+    <Link to="/Svd" className={mystyle.knap}>
+      SÅDAN VIRKER DET →
+    </Link>
+  </div>
+
+
+
+
             </section>
 
     );
