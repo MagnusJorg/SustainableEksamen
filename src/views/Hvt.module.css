@@ -1,8 +1,9 @@
 .hvtsek1 h1{
     margin: 0 0 40px 0;
 }
+
 .hvtsek1 {
-    margin: 100px 0 0 100px;
+    margin: 100px 0 0 200px;
     margin-left: 100px;
     max-width: 700px;
     position: relative; /* gør at honden kan være absolut ift. overskriften */
@@ -12,56 +13,54 @@
     position: absolute;
     top: -40px;
     right: -101px;
-    width: auto;
-    height: auto;
-  }
+}
 
-  .kolonne {
+.kolonne {
     flex: 1; /* Gør dem lige store */
     display: flex;
     flex-direction: column;
-    padding: 0 40px; /* Undgå fast bredde og overdreven padding */
+    padding: 0 40px; 
     border-right: 2px solid var(--skrift);
-    min-width: 0;  /* VIGTIGT i Flex for at undgå overflow */
-    box-sizing: border-box; /* Sørg for padding ikke udvider elementet */
-  }
+}
 
 /* Fjerner stregen på sidste kolonne */
 .kolonne:last-child {
     border-right: none;
-  }
+}
 
 .hvtSek2 {
     display: flex;
     padding: 200px 30px 100px 30px;
-    flex-wrap: wrap; /* Valgfrit hvis du vil tillade dem at hoppe ned på små skærme */
 }
 
 .kolonnebillede {
     margin-top: 100px;
-    max-width: 200px;
-    height: auto;
+    max-width: 100%;
     display: block;
     margin-left: auto;
     margin-right: auto;
-  }
+}
 
-  @media screen and (max-width: 1000px) {
+@media screen and (max-width: 1000px) {
     .hvtSek2 {
       flex-direction: column; /* Stack kolonner */
     }
-  
     .kolonne {
-        max-width: 400px;
         border-right: none; /* Fjern stregen */
         display: flex;
+        padding-bottom: 50px;
     }
-  
     .kolonne:last-child {
       border-bottom: none; /* Fjern sidste streg */
-    }
-  
+    } 
     .hond {
         display: none;
     }
+    .kolonnebillede {
+    margin-top: 20px;
+    }
+    .hvtsek1 {
+        margin: 50px 10px 0 40px;
+    }
   }
+  
