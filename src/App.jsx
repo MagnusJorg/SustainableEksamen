@@ -3,7 +3,6 @@ import Layout from "./Layout";
 import NotFound from "./views/NotFound";
 import "./App.css";
 import DefaultPage from "./views/DefaultPage";
-import DetailPage from "./views/DetailPage";
 import Oo from "./views/Oo";
 import Hvt from "./views/Hvt";
 import Svd from "./views/Svd";
@@ -28,10 +27,6 @@ const router = createBrowserRouter([
       {
         path: "/Oo",
         element: <Oo />,
-      },
-      {
-        path: "/detail/:itemId",
-        element: <DetailPage />
       },
       {
         path: "*",

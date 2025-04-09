@@ -12,7 +12,7 @@ export default function Hvt() {
           Når nogen spørger: "Har du styr på jeres ESG-data?" <br />
           Så har du et konkret svar – med tal, besparelser og dokumentation, du kan sende videre med ro i maven.
         </p>
-        <img src={hond} alt="hånd ikon" className={styles.hond} />
+        <img src={hond} alt="hånd ikon" className={styles.hond} loading="lazy" />
       </section>
 
       <Kolonner />
