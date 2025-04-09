@@ -16,7 +16,7 @@ export default function Footer() {
                 <Link to="/Hvt">HVAD VI TILBYDER</Link>
                 <Link to="/Svd">SÅDAN VIRKER DET</Link>
                 <Link to="/Oo">OM OS</Link>
-                <a href="mailto:Magnusjorgen@gmail.com">CSMKONTAKT@gmail.com</a>
+                <a href="mailto:Magnusjorgen@gmail.com">CSMKONTAKT@GMAIL.COM</a>
             </section>
         </footer>
     );
