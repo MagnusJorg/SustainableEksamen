@@ -1,12 +1,13 @@
-
 import React from "react";
 import styles from "../views/Hvt.module.css";
 import kalender from "../assets/kalender.svg";
 import esg from "../assets/esgRapport.svg";
 import snegl from "../assets/snegleGrafik.svg";
 
+
+//Komponentent til kolonner
 export default function Kolonner() {
-  // Her laver vi listen af kolonner
+ // Data til kolonnerne
   const kolonner = [
     {
       titel: "ESG-tal",
@@ -41,5 +42,3 @@ export default function Kolonner() {
     </section>
   );
 }
-
-  

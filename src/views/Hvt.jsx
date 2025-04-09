@@ -1,7 +1,7 @@
 import React from "react";
 import styles from "./Hvt.module.css";
 import hond from "../assets/hond.svg";
-import Kolonner from "../components/Kolonner";
+import Kolonner from "../components/Kolonne";
 
 export default function Hvt() {
   return (
@@ -19,5 +19,4 @@ export default function Hvt() {
     </main>
   );
 }
-
 
