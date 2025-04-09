@@ -1,6 +1,9 @@
 import "./svd.css"; //css fil til jsx
 import lys from '../assets/lys.svg'; //figur til tekst
-import Lottie from "lottie-react"; //gør spdan jeg kan bruge json
+//har lavet ny import fordi den ikke skal loade på alle siderne.
+import { Suspense, lazy } from "react";
+const Lottie = lazy(() => import("lottie-react"));
+
 import Kontakt from '../components/Kontakt'; //component
 
 import step1Anim from "../assets/step1.webm"; // Video
@@ -69,7 +72,10 @@ export default function Svd() {
                 />
               ) : (
                 // Håndtering af Lottie-animation
-                <Lottie animationData={step.animation} loop={true} />
+                <Suspense fallback={<div>Indlæser animation...</div>}>
+                   <Lottie animationData={step.animation} loop={true} />
+                </Suspense>
+
               )}
             </div>
           </div>

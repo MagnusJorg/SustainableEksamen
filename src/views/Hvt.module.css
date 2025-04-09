@@ -47,8 +47,9 @@
     }
     .kolonne {
         border-right: none; /* Fjern stregen */
+        border-bottom: 2px solid var(--skrift); /* Fjern stregen */
         display: flex;
-        padding-bottom: 50px;
+        padding: 50px 0 50px 0;
     }
     .kolonne:last-child {
       border-bottom: none; /* Fjern sidste streg */
