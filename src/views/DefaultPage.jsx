@@ -41,11 +41,11 @@ export default function DefaultPage() {
                 {itemlist.map((item, index) => (
                     <div key={index} className={mystyle.forklaring}>
 
-                        {/* Hver ting får et billede og en beskrivelse */}
+                        {/* Giver hver sammenligning et billede*/}
                         <div className={mystyle.ikonWrapper}>
-                            <img src={item.image} alt={item.name} className={mystyle.ikoner} />
+                            <img src={item.image} alt={item.altText} />
                         </div>
-                        {/* Navnet og beskrivelsen af hver ting */}
+                        {/* Tildeler, hver sammenligning et navnet og beskrivelse */}
                         <p><strong>{item.name}</strong></p>
                         <p>{item.desc}</p>
                     </div>
