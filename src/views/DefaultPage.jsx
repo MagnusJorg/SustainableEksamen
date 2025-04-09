@@ -34,6 +34,7 @@ export default function DefaultPage() {
             </div>
 
             <h2 className={mystyle.underOverskrift}>Dette svarer til</h2>
+            
             <div className={mystyle.eksempler}>
 
                 {/* Her looper vi igennem itemlist og viser hver ting */}
