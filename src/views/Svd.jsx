@@ -65,6 +65,7 @@ export default function Svd() {
                   muted
                   type="video/webm"
                   className="step-video"
+                  loading="lazy"
                 />
               ) : (
                 // Håndtering af Lottie-animation

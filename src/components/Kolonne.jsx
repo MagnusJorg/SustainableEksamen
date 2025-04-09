@@ -33,14 +33,14 @@ export default function Kolonner() {
   return (
     <section className={styles.hvtSek2}>
       {kolonner.map((item, index) => (
-        
+
         <article className={styles.kolonne} key={index}>
 
           <h2>{item.titel}</h2>
 
           <p>{item.tekst}</p>
 
-          <img src={item.billede} alt={item.alt} className={styles.kolonnebillede} />
+          <img src={item.billede} alt={item.alt} className={styles.kolonnebillede} loading="lazy"/>
 
         </article>
       ))}

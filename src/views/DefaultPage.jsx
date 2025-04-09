@@ -43,7 +43,7 @@ export default function DefaultPage() {
 
                         {/* Giver hver sammenligning et billede*/}
                         <div className={mystyle.ikonWrapper}>
-                            <img src={item.image} alt={item.altText} />
+                            <img src={item.image} alt={item.altText} loading="lazy" />
                         </div>
                         {/* Tildeler, hver sammenligning et navnet og beskrivelse */}
                         <p><strong>{item.name}</strong></p>

@@ -35,7 +35,7 @@ function OmOs() {
                 {img: Image2, name: "Claire Kahindi", role: "Chief Creative Officer", contact: "+45 00 00 00 00", email: "csm@ck.com"},
                 {img: Image3, name: "Magnus Jørgensen", role: "Head of Account", contact: "+45 00 00 00 00", email: "csm@mj.com"}].map((profile, index) => (
                     <div key={index} className={styles.profileCard}>
-                        <img src={profile.img} alt={profile.name} className={styles.profileImage} />
+                        <img src={profile.img} alt={profile.name} className={styles.profileImage} loading="lazy" />
                         <h2 className={styles.profileName}>{profile.name}</h2>
                         <p>{profile.role}</p>
                         <p className={styles.contactInfo}>{profile.contact}</p>
