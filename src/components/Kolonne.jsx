@@ -29,14 +29,19 @@ export default function Kolonner() {
     },
   ];
 
-  // Vi returnerer alle kolonner med map
+  // Kompontent
   return (
     <section className={styles.hvtSek2}>
       {kolonner.map((item, index) => (
+        
         <article className={styles.kolonne} key={index}>
+
           <h2>{item.titel}</h2>
+
           <p>{item.tekst}</p>
+
           <img src={item.billede} alt={item.alt} className={styles.kolonnebillede} />
+
         </article>
       ))}
     </section>
