@@ -43,7 +43,7 @@ export default function DefaultPage() {
 
                         {/* Giver hver sammenligning et billede*/}
                         <div className={mystyle.ikonWrapper}>
-                            <img src={item.image} alt={item.altText} loading="lazy"   width="100"  height="80"  />
+                        <img src={item.image} alt={item.altText} loading="lazy" width="100" height="80" />
                         </div>
                         {/* Tildeler, hver sammenligning et navnet og beskrivelse */}
                         <p><strong>{item.name}</strong></p>
@@ -56,7 +56,7 @@ export default function DefaultPage() {
 
             {/* Knap med link */}
             <div className={mystyle.knapWrapper}>
-                <Link to="/Svd" className={mystyle.knap}>
+                <Link to="/Svd" className={mystyle.knap} aria-label="Gå til spdan virker det">
                     SÅDAN VIRKER DET →
                 </Link>
             </div>

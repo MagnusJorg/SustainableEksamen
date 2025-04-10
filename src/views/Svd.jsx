@@ -73,7 +73,7 @@ export default function Svd() {
               ) : (
                 // Håndtering af Lottie-animation
                 <Suspense fallback={<div>Indlæser animation...</div>}>
-                   <Lottie animationData={step.animation} loop={true} />
+                   <Lottie animationData={step.animation} loop={true} aria-label={`Visualisering af ${step.title}`}/>
                 </Suspense>
 
               )}

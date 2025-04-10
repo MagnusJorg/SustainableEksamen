@@ -12,11 +12,11 @@ export default function Footer() {
             </section>
              {/* Links */}
             <section className={mystyle.kontakt}>
-                <Link to="/">FORSIDE</Link>
-                <Link to="/Hvt">HVAD VI TILBYDER</Link>
-                <Link to="/Svd">SÅDAN VIRKER DET</Link>
-                <Link to="/Oo">OM OS</Link>
-                <a href="mailto:Magnusjorgen@gmail.com">CSMKONTAKT@GMAIL.COM</a>
+                <Link to="/"  aria-label="Gå til forside" >FORSIDE</Link>
+                <Link to="/Hvt"  aria-label="Gå til hvad vi tilbyder" >HVAD VI TILBYDER</Link>
+                <Link to="/Svd" aria-label="Gå til sådan virker det" >SÅDAN VIRKER DET</Link>
+                <Link to="/Oo" aria-label="Gå til om os" >OM OS</Link>
+                <a href="mailto:Magnusjorgen@gmail.com" aria-label="send en mail" >CSMKONTAKT@GMAIL.COM</a>
             </section>
         </footer>
     );

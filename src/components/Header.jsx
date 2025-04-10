@@ -12,7 +12,7 @@ export default function Header() {
 
 
                 {/* Logo animation med link til forsiden */}
-                <Link to="/" className={mystyle.logo}>
+                <Link to="/" aria-label="Gå til forsiden" className={mystyle.logo}>
                     <Lottie animationData={animationData}
                         loop={false} // Sætter den til kun at køre 1 gang
                         className={mystyle.logoAnimation} />
@@ -23,13 +23,13 @@ export default function Header() {
                 <ul className={mystyle.navLinks}>
                     {/* Link fra react-router-dom, som navigerer internt */}
                     <li>
-                        <Link className={mystyle.linktext} to="/Hvt">HVAD VI TILBYDER</Link>
+                        <Link className={mystyle.linktext} to="/Hvt" aria-label="Gå til hvad vi tilbyder" >HVAD VI TILBYDER</Link>
                     </li>
                     <li>
-                        <Link className={mystyle.linktext} to="/Svd">SÅDAN VIRKER DET</Link>
+                        <Link className={mystyle.linktext} to="/Svd" aria-label="Gå til sådan virker det">SÅDAN VIRKER DET</Link>
                     </li>
                     <li>
-                        <Link className={mystyle.linktext} to="/Oo">OM OS</Link>
+                        <Link className={mystyle.linktext} to="/Oo" aria-label="Gå til om os">OM OS</Link>
                     </li>
                 </ul>
             </nav>

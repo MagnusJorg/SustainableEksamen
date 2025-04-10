@@ -1,7 +1,7 @@
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
 import Layout from "./Layout";
 import NotFound from "./views/NotFound";
-import "./App.css";
+
 import DefaultPage from "./views/DefaultPage";
 import Oo from "./views/Oo";
 import Hvt from "./views/Hvt";
